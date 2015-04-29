@@ -47,3 +47,9 @@ define('CAT_ARTISTS', '2');
 add_image_size('slider-thumbnail', '850', '350', true);
 add_image_size('cat-thumbnail', '850', '300', true);
 add_image_size('news-thumbnail', '270', '270', true);
+
+// Autres
+// function custom_excerpt_length( $length ) {
+// 	return 20;
+// }
+// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

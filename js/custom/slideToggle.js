@@ -1,3 +1,3 @@
 $( "#menuToggle" ).click(function() {
-  $( "#navToggle" ).slideToggle( "slow" );
+  $( "#navToggle" ).slideToggle( 300 );
 });

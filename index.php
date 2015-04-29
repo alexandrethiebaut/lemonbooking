@@ -7,29 +7,33 @@
 
 	<div id="customCarousel" class="owl-carousel">
 
-	<?php if ( have_posts() ) : ?>
+		<?php if ( have_posts() ) : ?>
 
-		<?php do_action( 'foundationpress_before_content' ); ?>
+			<?php do_action( 'foundationpress_before_content' ); ?>
 
-		<?php query_posts(array('cat'=>CAT_ARTISTS,'posts_per_page'=>3)); ?>
+			<?php query_posts(array('cat'=>CAT_ARTISTS,'posts_per_page'=>3)); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
-			
-				<div>
-					<?php the_post_thumbnail('slider-thumbnail'); ?>
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				</div>
+			<?php while ( have_posts() ) : the_post(); ?>
+				
+					<div>
+						<?php the_post_thumbnail('slider-thumbnail'); ?>
+						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<div class="contenu-slide show-on-medium-up medium-4 columns">
+							<?php the_excerpt(); ?>
+							<a class="button radius small secondary" href="<?= the_permalink() ?>">En savoir plus</a>
+						</div>
+					</div>
 
-		<?php endwhile; ?>
+			<?php endwhile; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
+			<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
 
-		<?php //do_action( 'foundationpress_before_pagination' ); ?>
+			<?php //do_action( 'foundationpress_before_pagination' ); ?>
 
-		<?php wp_reset_query(); ?>
+			<?php wp_reset_query(); ?>
 
-	<?php endif;?>
+		<?php endif;?>
 
 	</div>
 

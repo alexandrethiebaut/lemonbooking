@@ -13,7 +13,12 @@
 			<?php //get_template_part( 'content', get_post_format() ); ?>
  			
 			<div class="small-12 columns">
-				<h2><?php the_title(); ?></h2>
+				<?php //var_dump(get_field('concert_date')) ?>
+				<img src="<?= get_field('group_img')['sizes']['thumbnail']; ?>" alt="<?= get_field('group_img')['title']; ?>">
+				<h2><?php the_field('group_name'); ?></h2>
+				<span><?php the_field('concert_location'); ?> | <?php the_field('concert_date'); ?></span>
+				<a href="<?php the_permalink() ?>">En savoir plus</a>
+
 			</div>
 
 		<?php endwhile; ?>
