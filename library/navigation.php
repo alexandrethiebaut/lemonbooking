@@ -9,6 +9,7 @@ register_nav_menus(array(
 	'top-bar-r' => 'Right Top Bar',
 	'mobile-off-canvas' => 'Mobile',
 	'main-menu' => 'Menu Principal',
+	'social-networks' => 'Réseaux Sociaux'
 ));
 
 
@@ -91,6 +92,26 @@ function lemonBooking_main_menu() {
         'menu' => '',                                   // menu name
         'menu_class' => '',              				// adding custom nav class
         'theme_location' => 'main-menu',       			// where it's located in the theme
+        'before' => '',                                 // before each link <a>
+        'after' => '',                                  // after each link </a>
+        'link_before' => '',                            // before each link text
+        'link_after' => '',                             // after each link text
+        'depth' => 5,                                   // limit the depth of the nav
+        'fallback_cb' => false,                         // fallback function (see below)
+        'walker' => new Foundationpress_Offcanvas_Walker()
+    ));
+}
+
+/**
+ * Réseaux sociaux
+ */
+function lemonBooking_social_networks() {
+    wp_nav_menu(array(
+        'container' => false,                           // remove nav container
+        'container_class' => '',                        // class of container
+        'menu' => '',                                   // menu name
+        'menu_class' => '',              				// adding custom nav class
+        'theme_location' => 'social-networks',       	// where it's located in the theme
         'before' => '',                                 // before each link <a>
         'after' => '',                                  // after each link </a>
         'link_before' => '',                            // before each link text

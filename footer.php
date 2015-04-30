@@ -1,7 +1,7 @@
 </section>
 
 <div class="row">
-	<span class="small-12 medium-8 columns medium-offset-4">Copyright</span>
+	<span class="small-12 medium-8 columns medium-offset-4">Lemon Booking | Copyright 2015  | Conception : <a href="alexandrethiebaut.fr">Alexandre Thiebaut</a></span>
 </div>
 
 <footer class="row">

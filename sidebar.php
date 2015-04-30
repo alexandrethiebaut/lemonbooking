@@ -5,18 +5,14 @@
 	<!-- Emplacement logo -->
 	<h1 class="textalignright"><a href="<?= home_url(); ?>"><img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" /></a></h1>
 	<!-- // -->
-	
-	<?php 
-		// Emplacement menu lang 
-		//wp_nav_menu('');
-	?>
+
+	<div class="textalignright">
+		<?php pll_the_languages(); ?>
+	</div>
 
 	<p class="textalignright"><?= bloginfo('description') ?></p>
 
-	<?php 
-		// Menu Réseaux sociaux
-		//wp_nav_menu('');
-	?>
+	<?php wp_nav_menu(array('theme_location' => 'social-networks')); ?>
 
 	<?php do_action( 'foundationpress_after_sidebar' ); ?>
 </aside>

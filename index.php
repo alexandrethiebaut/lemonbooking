@@ -18,10 +18,8 @@
 					<div>
 						<?php the_post_thumbnail('slider-thumbnail'); ?>
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<div class="contenu-slide show-on-medium-up medium-4 columns">
-							<?php the_excerpt(); ?>
-							<a class="button radius small secondary" href="<?= the_permalink() ?>">En savoir plus</a>
-						</div>
+						<?php the_excerpt(); ?>
+						<a class="button radius small secondary" href="<?= the_permalink() ?>">En savoir plus</a>
 					</div>
 
 			<?php endwhile; ?>
@@ -58,7 +56,7 @@
 
 	<?php endif;?>
 
-
+	<a class="button radius small secondary" href="<?= get_category_link(CAT_NEWS); ?>">Voir tous les articles</a>
 
 	<?php //if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
 		<!-- <nav id="post-nav">

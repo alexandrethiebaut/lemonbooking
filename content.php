@@ -20,7 +20,7 @@
 				<h5><?= get_the_date('j M. Y'); ?></h5>
 			</header>
 			<div class="entry-content small-10 medium-7 columns end">
-			<h2><?php the_title() ?></h2>
+			<h3><?php the_title() ?></h3>
 				<?php the_excerpt( __( 'Continue reading...', 'FoundationPress' ) ); ?>
 				<a class="button radius tiny secondary" href="<?php the_permalink() ?>"><span class="icon-arrow-right"></span></a>
 			</div>

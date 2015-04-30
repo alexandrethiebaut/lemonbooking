@@ -39,8 +39,6 @@ require_once('library/custom-header.php');
 
 // CONSTANTES
 
-define('CAT_NEWS', '1');
-define('CAT_ARTISTS', '2');
 // define('CAT_NEWS', '2');
 
 // FORMATS D'IMAGES

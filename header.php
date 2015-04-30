@@ -62,7 +62,7 @@
 			<nav class="hide small-12 columns" data-topbar role="navigation" id="navToggle">
 			    <?php 
 			        // Menu principale du site
-			        wp_nav_menu('main-menu');
+			        wp_nav_menu(array('theme-location' => 'main-menu'));
 			    ?>
 			</nav>
 		</div>
