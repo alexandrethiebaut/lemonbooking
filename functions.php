@@ -39,7 +39,8 @@ require_once('library/custom-header.php');
 
 // CONSTANTES
 
-// define('CAT_NEWS', '2');
+define ('CAT_NEWS', $polylang->model->get_translation('category', 1, pll_current_language()));
+define('CAT_ARTISTS', $polylang->model->get_translation('category', 2, pll_current_language()));
 
 // FORMATS D'IMAGES
 add_image_size('slider-thumbnail', '850', '350', true);
