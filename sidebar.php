@@ -1,4 +1,4 @@
-<aside id="sidebar" class="small-12 large-4 columns show-for-medium-up">
+<aside id="sidebar" class="small-12 medium-4 large-4 columns show-for-medium-up">
 	<?php do_action( 'foundationpress_before_sidebar' ); ?>
 	<?php //dynamic_sidebar( 'sidebar-widgets' ); ?>
 		
@@ -11,6 +11,7 @@
 	</div>
 
 	<p class="textalignright"><?= bloginfo('description') ?></p>
+	<span id="printHere"></span>
 
 	<?php wp_nav_menu(array('theme_location' => 'social-networks')); ?>
 

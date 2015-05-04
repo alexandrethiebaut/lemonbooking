@@ -15,8 +15,8 @@
 
 				<?php if ( has_post_thumbnail() ) : ?>
 					<div class="row">
-						<div class="column">
-							<?php the_post_thumbnail('news-thumbnail'); ?>
+						<div class="small-12 columns">
+							<?php the_post_thumbnail('slider-thumbnail'); ?>
 						</div>
 					</div>
 				<?php endif; ?>

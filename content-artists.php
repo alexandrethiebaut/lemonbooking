@@ -17,9 +17,7 @@
 				<?php the_post_thumbnail('cat-thumbnail'); ?>
 			</div>
 			<div class="entry-content small-12 medium-12 columns end">
-			<h2><?php the_title() ?></h2>
-				<?php the_excerpt( __( 'Continue reading...', 'FoundationPress' ) ); ?>
-				<a href="<?php the_permalink() ?>">Lire la suite</a>
+			<h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
 			</div>
 
 		</div>

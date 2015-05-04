@@ -3,7 +3,7 @@
 
 	<?php get_sidebar(); ?>
 
-	<div class="small-12 large-8 columns" role="main">
+	<div class="small-12 medium-8 columns" role="main">
 
 	<div id="customCarousel" class="owl-carousel">
 
@@ -18,7 +18,6 @@
 					<div>
 						<?php the_post_thumbnail('slider-thumbnail'); ?>
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<?php the_excerpt(); ?>
 						<a class="button radius small secondary" href="<?= the_permalink() ?>">En savoir plus</a>
 					</div>
 

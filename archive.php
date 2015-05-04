@@ -5,7 +5,7 @@
 	<?php get_sidebar(); ?>
 
 <!-- Row for main content area -->
-	<div class="small-12 large-8 columns" role="main">
+	<div class="small-12 medium-8 columns" role="main">
 	
 	<h3><?= category_description(); ?></h3>
 	

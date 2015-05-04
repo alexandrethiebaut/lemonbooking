@@ -11,8 +11,8 @@
 					echo 'Error 404 Not Found';
 				} elseif ( is_single() ) {
 					wp_title( '' );
-				} else {
-					echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
+				} elseif (is_category() ) {
+					echo single_cat_title().' | '; bloginfo( 'name' );
 				} 
 			?>
 		</title>
