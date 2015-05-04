@@ -29,6 +29,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_register_script( 'menuToggle', get_template_directory_uri().'/js/custom/slideToggle.js', array('jquery'), '1.0.0', true );
 	wp_register_script( 'owlCarousel', get_template_directory_uri().'/js/custom/owl.carousel.js', array('jquery'));
 	wp_register_script( 'customCarousel', get_template_directory_uri().'/js/custom/myCarousel.js', array('jquery'));
+	wp_register_script( 'fixer', get_template_directory_uri().'/js/custom/fixer.js', array('jquery'));
 
 
 	// Enqueue all registered scripts
@@ -39,6 +40,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_enqueue_script( 'menuToggle' );
 	wp_enqueue_script( 'owlCarousel' );
 	wp_enqueue_script( 'customCarousel' );
+	wp_enqueue_script( 'fixer' );
 
 	}
 
