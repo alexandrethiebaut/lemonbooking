@@ -1,0 +1,25 @@
+#sidebar {
+	text-align: right;
+	h1 {
+		margin: 0;
+		padding: rem-calc(20) 0;
+		border-bottom: solid 5px $secondary-color;
+	}
+	.menu {
+		padding: rem-calc(10) 0;
+		font-family: Arial, sans-serif;
+		font-size: rem-calc(10);
+		li {
+			display: inline-block;
+			margin: rem-calc(5);
+			a {
+				color: $iron;
+			}
+			&:hover {
+				a {
+					color : $primary-color;
+				}
+			}
+		}
+	}
+}

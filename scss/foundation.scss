@@ -11,6 +11,7 @@
 
 @import "config/settings"; // Default settings file. Uncomment each setting you need to change
 // @import "config/custom-settings"; // Or copy the stuff you need to change to this file and uncomment
+@import "config/mixins";
 
 @import "../bower_components/foundation/scss/foundation/components/grid";
 @import "../bower_components/foundation/scss/foundation/components/accordion";
@@ -68,3 +69,6 @@
 @import "site/topbar";
 @import "site/hero";
 @import "site/footer";
+@import "site/menu";
+@import "site/slider";
+@import "site/sidebar";

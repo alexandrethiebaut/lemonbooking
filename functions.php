@@ -43,12 +43,15 @@ define ('CAT_NEWS', $polylang->model->get_translation('category', 1, pll_current
 define('CAT_ARTISTS', $polylang->model->get_translation('category', 2, pll_current_language()));
 
 // FORMATS D'IMAGES
-add_image_size('slider-thumbnail', '850', '350', true);
-add_image_size('cat-thumbnail', '850', '300', true);
-add_image_size('news-thumbnail', '270', '270', true);
+add_image_size('slider-thumbnail', '850', '350', true, array('center', 'center'));
+add_image_size('cat-thumbnail', '850', '300', true, array('center', 'center'));
+add_image_size('news-thumbnail', '270', '270', true, array('center', 'center'));
 
 // Autres
-// function custom_excerpt_length( $length ) {
-// 	return 20;
-// }
-// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+	// the_excerpt();
+
+	function custom_excerpt_length( $length ) {
+		return 20;
+	}
+	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

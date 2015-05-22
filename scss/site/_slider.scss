@@ -1,0 +1,36 @@
+#customCarousel {
+	.owl-item {
+		overflow: hidden;
+		position: relative;
+		.slide-content {
+			color: $white;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -50%;
+			padding: rem-calc(20);
+			background: linear-gradient(to top, rgba($secondary-color, 1), rgba($secondary-color, 0));
+			@include transition(bottom, 500ms, ease-in-out);
+			h2 {
+				margin: 0;
+				display: inline-block;
+				border-bottom: solid 2px $secondary-color;
+				a {
+					color: $white;
+				}
+			}
+			p {
+				margin: rem-calc(14) 0;
+				width: 50%;
+				font-size: $paragraph-font-size;
+			}
+		}
+		&:hover {
+			.slide-content {
+				bottom: 0;
+				h2 {
+				}
+			}
+		}
+	}
+}

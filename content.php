@@ -31,7 +31,7 @@
 			<div class="entry-content small-10 large-7 columns end">
 
 				<a href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
-				<h5 class="hide-for-large-up"><?= get_the_date('j M. Y'); ?></h5>
+				<h5 class="hide-for-medium-up"><?= get_the_date('j M. Y'); ?></h5>
 					<?php the_excerpt( __( 'Continue reading...', 'FoundationPress' ) ); ?>
 					<a class="button radius tiny secondary" href="<?php the_permalink() ?>">Lire la suite</span></a>
 				

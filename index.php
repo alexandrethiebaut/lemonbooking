@@ -17,8 +17,11 @@
 				
 					<div>
 						<?php the_post_thumbnail('slider-thumbnail'); ?>
-						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<a class="button radius small secondary" href="<?= the_permalink() ?>">En savoir plus</a>
+						<div class="slide-content">
+							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+							<p><?php the_excerpt(); ?></p>
+							<a class="button radius small secondary" href="<?= the_permalink() ?>">En savoir plus</a>
+						</div>
 					</div>
 
 			<?php endwhile; ?>

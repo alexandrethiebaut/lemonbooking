@@ -3,15 +3,14 @@
 	<?php //dynamic_sidebar( 'sidebar-widgets' ); ?>
 		
 	<!-- Emplacement logo -->
-	<h1 class="textalignright"><a href="<?= home_url(); ?>"><img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" /></a></h1>
+	<h1><a href="<?= home_url(); ?>"><img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" /></a></h1>
 	<!-- // -->
 
-	<div class="textalignright">
+	<div class="menu">
 		<?php pll_the_languages(); ?>
 	</div>
 
-	<p class="textalignright"><?= bloginfo('description') ?></p>
-	<span id="printHere"></span>
+	<p><?= bloginfo('description') ?></p>
 
 	<?php wp_nav_menu(array('theme_location' => 'social-networks')); ?>
 
