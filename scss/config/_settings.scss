@@ -454,7 +454,7 @@ $paragraph-text-rendering: optimizeLegibility;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
-// $secondary-button-border-color: $secondary-button-bg-hover;
+$secondary-button-border-color: $secondary-color;
 // $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
 // $success-button-border-color: $success-button-bg-hover;
 // $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
@@ -878,45 +878,45 @@ $menu-slide: "transform 500ms ease";
 // 19. Orbit
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$include-html-orbit-classes: $include-html-classes;
+// $include-html-orbit-classes: $include-html-classes;
 
 //We use these to control the caption styles
-$orbit-container-bg: none;
-$orbit-caption-bg: rgba(51,51,51, 0);
-$orbit-caption-font-color: $white;
-$orbit-caption-font-size: rem-calc(14);
-$orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
-$orbit-caption-padding: rem-calc(10 14);
-$orbit-caption-height: auto;
+// $orbit-container-bg: none;
+// $orbit-caption-bg: rgba(51,51,51, 0);
+// $orbit-caption-font-color: $white;
+// $orbit-caption-font-size: rem-calc(14);
+// $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
+// $orbit-caption-padding: rem-calc(10 14);
+// $orbit-caption-height: auto;
 
 //We use these to control the left/right nav styles
-$orbit-nav-bg: transparent;
-$orbit-nav-bg-hover: rgba(0,0,0,0.3);
-$orbit-nav-arrow-color: $white;
-$orbit-nav-arrow-color-hover: $white;
+// $orbit-nav-bg: transparent;
+// $orbit-nav-bg-hover: rgba(0,0,0,0.3);
+// $orbit-nav-arrow-color: $white;
+// $orbit-nav-arrow-color-hover: $white;
 
 // We use these to control the timer styles
-$orbit-timer-bg: rgba(255,255,255,0.3);
-$orbit-timer-show-progress-bar: false;
+// $orbit-timer-bg: rgba(255,255,255,0.3);
+// $orbit-timer-show-progress-bar: false;
 
 // We use these to control the bullet nav styles
-$orbit-bullet-nav-color: $iron;
-$orbit-bullet-nav-color-active: $aluminum;
-$orbit-bullet-radius: rem-calc(9);
+// $orbit-bullet-nav-color: $iron;
+// $orbit-bullet-nav-color-active: $aluminum;
+// $orbit-bullet-radius: rem-calc(9);
 
 // We use these to controls the style of slide numbers
-$orbit-slide-number-bg: rgba(0,0,0,0);
-$orbit-slide-number-font-color: $white;
-$orbit-slide-number-padding: rem-calc(0);
+// $orbit-slide-number-bg: rgba(0,0,0,0);
+// $orbit-slide-number-font-color: $white;
+// $orbit-slide-number-padding: rem-calc(0);
 
 // Hide controls on small
-$orbit-nav-hide-for-small: true;
-$orbit-bullet-hide-for-small: true;
-$orbit-timer-hide-for-small: true;
+// $orbit-nav-hide-for-small: true;
+// $orbit-bullet-hide-for-small: true;
+// $orbit-timer-hide-for-small: true;
 
 // Graceful Loading Wrapper and preloader
-$wrapper-class: "slideshow-wrapper";
-$preloader-class: "preloader";
+// $wrapper-class: "slideshow-wrapper";
+// $preloader-class: "preloader";
 
 // 20. Pagination
 // - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -1,6 +1,10 @@
 // Add some whitespace above the footer for medium-up screens
-@media #{$medium-up} {
-	footer.row {
-		margin-top: rem-calc(60);
+@media #{$small-up} {
+	.footer {
+		margin: rem-calc(75);
+		font-size: rem-calc(12);
+		span {
+			width: 25%;
+		}
 	}
 }

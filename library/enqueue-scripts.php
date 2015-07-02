@@ -40,7 +40,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	wp_enqueue_script( 'menuToggle' );
 	wp_enqueue_script( 'owlCarousel' );
 	wp_enqueue_script( 'customCarousel' );
-	wp_enqueue_script( 'fixer' );
+	//wp_enqueue_script( 'fixer' );
 
 	}
 

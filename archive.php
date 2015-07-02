@@ -7,7 +7,7 @@
 <!-- Row for main content area -->
 	<div class="small-12 medium-8 columns" role="main">
 	
-	<h3><?= category_description(); ?></h3>
+	<h3 class="cat-title"><?= category_description(); ?></h3>
 	
 	<?php if ( have_posts() ) : ?>
 

@@ -59,3 +59,32 @@ img.alignright {
 .textalignright {
 	text-align: right
 }
+
+//-------------------------------------------------------------------
+br.separator {
+	margin: rem-calc(25 0);
+}
+
+a.see-more {
+	border: solid 2px $secondary-color;
+	background: transparent !important;
+	color: $secondary-color !important;
+	text-transform: uppercase;
+	font-size: rem-calc(10) !important;
+	font-weight: bold;
+	border-color: $secondary-color;
+	transition: none !important;
+	&:hover {
+		background: $secondary-color !important;
+		color: $white !important;
+	}
+	&.in-slide {
+		color: $white !important;
+		border-color: $white !important;
+		border: solid 2px $white !important;
+		&:hover {
+			background: $white !important;
+			color: $primary-color !important;
+		}
+	}
+}

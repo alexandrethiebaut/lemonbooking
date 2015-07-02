@@ -20,7 +20,7 @@
 						<div class="slide-content">
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 							<p><?php the_excerpt(); ?></p>
-							<a class="button radius small secondary" href="<?= the_permalink() ?>">En savoir plus</a>
+							<a class="button small secondary see-more in-slide" href="<?= the_permalink() ?>">En savoir plus</a>
 						</div>
 					</div>
 
@@ -37,7 +37,7 @@
 
 	</div>
 
-	<h3><?= get_the_category_by_ID(CAT_NEWS); ?></h3>
+	<h3 class="cat-title"><?= get_the_category_by_ID(CAT_NEWS); ?></h3>
 
 	<?php if ( have_posts() ) : ?>
 
@@ -57,8 +57,10 @@
 		<?php wp_reset_query(); ?>
 
 	<?php endif;?>
+	
+	<br class="separator">
 
-	<a class="button radius small secondary" href="<?= get_category_link(CAT_NEWS); ?>">Voir tous les articles</a>
+	<a class="button small secondary see-more" href="<?= get_category_link(CAT_NEWS); ?>">Voir tous les articles</a>
 
 	<?php //if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
 		<!-- <nav id="post-nav">

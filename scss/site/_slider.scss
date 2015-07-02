@@ -9,7 +9,7 @@
 			right: 0;
 			bottom: -50%;
 			padding: rem-calc(20);
-			background: linear-gradient(to top, rgba($secondary-color, 1), rgba($secondary-color, 0));
+			@include full-yellow-gradient;
 			@include transition(bottom, 500ms, ease-in-out);
 			h2 {
 				margin: 0;

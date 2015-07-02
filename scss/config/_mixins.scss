@@ -3,3 +3,7 @@
 	-o-transition: $what, $length, $type;
 	transition: $what, $length, $type;
 };
+
+@mixin full-yellow-gradient () {
+	background: linear-gradient(to top, rgba($secondary-color, 1), rgba($secondary-color, 0));
+};
