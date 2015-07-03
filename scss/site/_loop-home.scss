@@ -22,10 +22,10 @@
 			opacity: .33;
 		}
 		.post-date {
-			padding: rem-calc(5) !important;
+			padding: rem-calc(10) !important;
 			border-right: solid 1px rgba($iron, .2);
 			line-height: rem-calc(10);
-			padding-top: rem-calc(10) !important;
+			margin-top: rem-calc(10) !important;
 		}
 		h5 {
 			font-size: rem-calc(28);
@@ -41,20 +41,6 @@
 			padding: rem-calc(0 10) !important;
 			padding-bottom: rem-calc(20) !important;
 
-		}
-		.link-article {
-			font-size: rem-calc(10);
-			text-transform: uppercase;
-			span {
-				margin-left: rem-calc(10);
-			}
-			&:hover {
-				color: $secondary-color;
-				border-bottom: solid 2px $secondary-color;
-				span {
-					color: $secondary-color;
-				}
-			}
 		}
 	}
 }

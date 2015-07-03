@@ -88,3 +88,18 @@ a.see-more {
 		}
 	}
 }
+
+.link-article {
+	font-size: rem-calc(10);
+	text-transform: uppercase;
+	span {
+		margin-left: rem-calc(10);
+	}
+	&:hover {
+		color: $secondary-color;
+		border-bottom: solid 2px $secondary-color;
+		span {
+			color: $secondary-color;
+		}
+	}
+}

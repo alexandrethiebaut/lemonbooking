@@ -27,9 +27,8 @@
 			<?php endwhile; ?>
 
 			<?php else : ?>
-				<?php get_template_part( 'content', 'none' ); ?>
 
-			<?php //do_action( 'foundationpress_before_pagination' ); ?>
+				<?php get_template_part( 'content', 'none' ); ?>
 
 			<?php wp_reset_query(); ?>
 
@@ -37,6 +36,7 @@
 
 	</div>
 
+	<!-- Loop articles actualités -->
 	<h3 class="cat-title"><?= get_the_category_by_ID(CAT_NEWS); ?></h3>
 
 	<?php if ( have_posts() ) : ?>
@@ -57,17 +57,11 @@
 		<?php wp_reset_query(); ?>
 
 	<?php endif;?>
-	
+	<!-- // -->
+
 	<br class="separator">
 
 	<a class="button small secondary see-more" href="<?= get_category_link(CAT_NEWS); ?>">Voir tous les articles</a>
-
-	<?php //if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
-		<!-- <nav id="post-nav">
-			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'FoundationPress' ) ); ?></div>
-			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'FoundationPress' ) ); ?></div>
-		</nav> -->
-	<?php //} ?>
 
 	<?php do_action( 'foundationpress_after_content' ); ?>
 
