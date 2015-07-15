@@ -7,7 +7,13 @@
 
 	<div class="small-12 medium-8 columns" role="main">
 
-	<h2><?php single_cat_title(); ?></h2>
+	<h2 class="cat-title">
+		<?php if(get_locale()=="fr_FR") : ?>
+			Prochains évenements
+		<?php else : ?>
+			Upcoming events
+		<?php endif; ?>
+	</h2>
 
 	<?php if ( have_posts() ) : ?>
 

@@ -1,0 +1,20 @@
+@media #{$small-up} {
+	.is-single {
+		.entry-content {
+			padding: rem-calc(25) !important;
+		}
+		h1 {
+			margin-bottom: rem-calc(40);
+		}
+		a {
+			border-bottom: solid 1px $primary-color;
+			&:hover {
+				color: $secondary-color;
+				border-bottom: solid 2px $secondary-color;
+				span {
+					color: $secondary-color;
+				}
+			}
+		}
+	}
+}
