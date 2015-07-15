@@ -4,9 +4,13 @@
 		h2 {
 			position: absolute;
 			top: -90px;
+			a {
+				color: $white;
+			}
 		}
 		p {
 			font-size: 1rem;
+			padding: rem-calc(25);
 		}
 	}
  	// TEMPLATE CONCERT

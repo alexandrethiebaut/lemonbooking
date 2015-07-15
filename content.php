@@ -14,14 +14,14 @@
 		<div class="row collapse loop-home">
 			
 			<div class="small-12 hide-for-large-up columns">
-				<div class="background-overlay"></div>
 				<a href="<?php the_permalink() ?>">
+					<div class="background-overlay"></div>
 					<?php the_post_thumbnail('slider-thumbnail'); ?>
 				</a>
 			</div>
 			<div class="show-for-large-up large-4 columns">
-				<div class="background-overlay"></div>
 				<a href="<?php the_permalink() ?>">
+					<div class="background-overlay"></div>
 					<?php the_post_thumbnail('news-thumbnail'); ?>
 				</a>
 			</div>

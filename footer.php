@@ -1,7 +1,9 @@
 </section>
 
-<div class="footer row">
-	<span class="small-12 medium-8 columns medium-offset-4">&#169; 2015 Lemon Booking - Site réalisé par <a class="link-article" href="http://alexandrethiebaut.fr">Alexandre Thiebaut</a></span>
+<div class="row">
+	<div class="footer">
+		<span class="small-offset-0 small-12 medium-8 columns medium-offset-4">&#169; 2015 Lemon Booking - Site réalisé par <a class="link-article" href="http://alexandrethiebaut.fr">Alexandre Thiebaut</a></span>
+	</div>
 </div>
 
 <a class="exit-off-canvas"></a>
