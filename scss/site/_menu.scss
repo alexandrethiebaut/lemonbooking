@@ -1,39 +1,53 @@
-#menuToggle {
-	margin-bottom: 0 !important;
-	cursor: pointer;
-	span {
-		font-size: rem-calc(20);
-		color: $white;
+@media #{$small-up} {
+	#menuToggle {
+		margin-bottom: 0 !important;
+		cursor: pointer;
+		span {
+			font-size: rem-calc(20);
+			color: $white;
+		}
 	}
-}
-
-.bg-menuToggle {
-	background: rgba($white, 1);
-	box-shadow: inset 0 -15px 15px -15px rgba($primary-color, .05);
-	ul {
-		margin: 0;
-		padding: 0;
-		li {
-			display: inline-block;
-			padding: rem-calc(20);
-			a {
-				font-size: rem-calc(14);
-				&:hover {
-					color: $secondary-color;
-					text-decoration: underline;
+	.bg-menuToggle {
+		background: rgba($white, 1);
+		box-shadow: inset 0 -15px 15px -15px rgba($primary-color, .05);
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				padding: rem-calc(20);
+				a {
+					font-size: rem-calc(14);
+					&:hover {
+						color: $secondary-color;
+						text-decoration: underline;
+					}
 				}
 			}
 		}
 	}
+	.left-off-canvas-menu {
+		text-align: right;
+		.menu-wrapper {
+			padding: rem-calc(20);
+		}
+		img, p {
+			margin-bottom: 20px;
+		}
+	}	
 }
 
-.left-off-canvas-menu {
-	text-align: right;
-	.menu-wrapper {
-		padding: rem-calc(20);
+@media #{$small-only} {
+	.tab-bar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+		.icon-menu {
+			color: $white;
+			margin-left: rem-calc(20);
+		}
 	}
-	img, p {
-		margin-bottom: 20px;
-	}
-
+	
 }

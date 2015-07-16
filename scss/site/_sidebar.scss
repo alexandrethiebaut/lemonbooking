@@ -1,4 +1,4 @@
-#sidebar {
+#sidebar, .menu-wrapper {
 	text-align: right;
 	h1 {
 		margin: 0;
@@ -22,4 +22,21 @@
 			}
 		}
 	}
+}
+
+.left-off-canvas-menu {
+	p {
+		margin-top: rem-calc(25);
+	}
+}
+
+//Hard reset
+.off-canvas-list {
+	li {
+		a {
+			&:active {
+				background: none !important;
+			}
+		}
+	} 
 }

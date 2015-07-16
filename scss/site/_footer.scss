@@ -2,8 +2,12 @@
 @media #{$small-up} {
 	.footer {
 		margin-top: rem-calc(75);
-		padding-bottom: rem-calc(15);
+		margin-bottom: rem-calc(25);
 		font-size: rem-calc(12);
+	}
+}
+@media #{$medium-up} {
+	.footer {
 		span {
 			width: 25%;
 		}

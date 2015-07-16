@@ -16,12 +16,17 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 				
 					<div>
+					<a href="<?php the_permalink(); ?>">
 						<?php the_post_thumbnail('slider-thumbnail'); ?>
-						<div class="slide-content">
+						<div class="slide-content show-for-medium-up">
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 							<p><?php the_excerpt(); ?></p>
 							<a class="button small secondary see-more in-slide" href="<?= the_permalink() ?>">En savoir plus</a>
 						</div>
+						<a href="<?php the_permalink(); ?>" class="show-for-small-only">
+							<h2><?php the_title(); ?></h2>
+						</a>
+					</a>
 					</div>
 
 			<?php endwhile; ?>

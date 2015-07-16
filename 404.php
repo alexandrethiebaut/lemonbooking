@@ -1,13 +1,16 @@
 <?php get_header(); ?>
 
 <div class="row">
+	
+	<?php get_sidebar(); ?>
+
 	<div class="small-12 large-8 columns" role="main">
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php _e( 'File Not Found', 'FoundationPress' ); ?></h1>
-			</header>
+		<article class="is-single loop-home" id="post-<?php the_ID(); ?>">
 			<div class="entry-content">
+				<header>
+					<h1 class="entry-title"><?php _e( 'File Not Found', 'FoundationPress' ); ?></h1>
+				</header>
 				<div class="error">
 					<p class="bottom"><?php _e( 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'FoundationPress' ); ?></p>
 				</div>
@@ -21,6 +24,5 @@
 		</article>
 
 	</div>
-	<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
