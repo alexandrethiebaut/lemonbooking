@@ -28,9 +28,17 @@
 		&:hover {
 			.slide-content {
 				bottom: 0;
-				h2 {
-				}
 			}
 		}
 	}
+}
+
+@media #{$small-only} {
+	#customCarousel {
+		h2 {
+			font-size: rem-calc(24) !important;
+			margin-top: rem-calc(20);
+		}
+	}
+	
 }

@@ -9,9 +9,9 @@
 
 	<h2 class="cat-title">
 		<?php if(get_locale()=="fr_FR") : ?>
-			Prochains évenements
+			Prochains concerts
 		<?php else : ?>
-			Upcoming events
+			Upcoming concerts
 		<?php endif; ?>
 	</h2>
 

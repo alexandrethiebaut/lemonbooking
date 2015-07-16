@@ -18,3 +18,11 @@
 		}
 	}
 }
+
+@media #{$small-only} {
+	.is-single {
+		.entry-content {
+			padding: rem-calc(10) !important;
+		}
+	}
+}

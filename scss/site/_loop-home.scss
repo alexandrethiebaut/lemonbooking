@@ -44,3 +44,21 @@
 		}
 	}
 }
+
+@media #{$small-only} {
+	.loop-home {
+		h3 {
+			margin-top: rem-calc(20);
+			font-size: rem-calc(24);
+		}
+		h5 {
+			font-size: rem-calc(11);
+			line-height: rem-calc(11);
+			color: $iron;
+		}
+		p {
+			margin: rem-calc(25 0) !important;
+		}
+	}
+	
+}

@@ -52,5 +52,34 @@
 			}
 		}
 	}
-	
+}
+@media #{$small-only} {
+	.is-cat {
+		h2 {
+			margin-top: rem-calc(25);
+			position: relative;
+			top: 0;
+			font-size: rem-calc(24);
+			a{
+				color: $primary-color;
+			}
+		}
+		p {
+			padding: 0;
+			font-size: rem-calc(12);
+		}
+	}
+	.is-concert {	
+		text-align: center;
+		img, a, .infos-concert {
+			display: block;
+		}
+		a {
+			float: none;
+		}
+		img {
+			margin: auto;
+			margin-bottom: rem-calc(30);
+		}
+	}
 }
